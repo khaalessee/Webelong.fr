@@ -68,7 +68,7 @@ const Services = () => {
   };
 
   useEffect(() => {
-    const handleCloseOnEscape = (event) => {
+    const handleCloseOnEscape = (event: KeyboardEvent) => {
       if (event.keyCode === 27) { // Vérifie si la touche appuyée est "Échap" (code 27)
         setIsIdentityModalOpen(false);
         setIsDevelopmentModalOpen(false);

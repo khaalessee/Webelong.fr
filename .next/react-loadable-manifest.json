@@ -1,8 +1,8 @@
 {
   "..\\node_modules\\react-flickity-component\\dist\\react-flickity-component.es.js -> flickity": {
-    "id": 3375,
+    "id": "..\\node_modules\\react-flickity-component\\dist\\react-flickity-component.es.js -> flickity",
     "files": [
-      "static/chunks/375.0b77cd2ec064a4f6.js"
+      "static/chunks/_app-pages-browser_node_modules_flickity_js_index_js.js"
     ]
   }
 }

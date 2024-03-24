@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/sites/webelong.fr/public_html
+    - export DEPLOYPATH=traductik/home/sites/webelong.fr/public_html
     - /bin/cp -a * $DEPLOYPATH

@@ -1,0 +1,10 @@
+---
+deployment:
+  tasks:
+    - /bin/mkdir -p /home/sites/webelong.fr/public_html
+    - /bin/cp -R .next/static /home/sites/webelong.fr/public_html
+    - /bin/cp -R app/pages /home/sites/webelong.fr/public_html
+    - /bin/cp -R app/components /home/sites/webelong.fr/public_html
+    - /bin/cp -R public /home/sites/webelong.fr/public_html
+    - /bin/cp app/page.tsx /home/sites/webelong.fr/public_html
+    - /bin/cp app/tailwind.css /home/sites/webelong.fr/public_html

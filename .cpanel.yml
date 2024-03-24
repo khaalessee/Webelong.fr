@@ -9,10 +9,8 @@ deployment:
     - /bin/cp -R constants $DEPLOYPATH
     - /bin/cp -R out $DEPLOYPATH
     - /bin/cp -R utils $DEPLOYPATH
-    - /bin/cp app/page.tsx $DEPLOYPATH
-    - /bin/cp app/tailwind.config.ts $DEPLOYPATH
-    - /bin/cp app/tsconfig.json $DEPLOYPATH
-    - /bin/cp app/postcss.config.js $DEPLOYPATH
-    - /bin/cp app/next.config.js $DEPLOYPATH
-    - /bin/cp app/next-env.d.ts $DEPLOYPATH
-
+    - /bin/cp tailwind.config.ts $DEPLOYPATH
+    - /bin/cp tsconfig.json $DEPLOYPATH
+    - /bin/cp postcss.config.js $DEPLOYPATH
+    - /bin/cp next.config.js $DEPLOYPATH
+    - /bin/cp next-env.d.ts $DEPLOYPATH

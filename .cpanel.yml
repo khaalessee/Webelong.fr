@@ -2,7 +2,6 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/sites/webelong.fr/public_html
-    - /bin/mkdir -p $DEPLOYPATH
     - /bin/cp -R .next/static $DEPLOYPATH
     - /bin/cp -R app $DEPLOYPATH
     - /bin/cp -R public $DEPLOYPATH

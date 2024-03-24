@@ -1,10 +1,18 @@
 ---
 deployment:
   tasks:
-    - /bin/mkdir -p /home/sites/webelong.fr/public_html
-    - /bin/cp -R .next/static /home/sites/webelong.fr/public_html
-    - /bin/cp -R app/pages /home/sites/webelong.fr/public_html
-    - /bin/cp -R app/components /home/sites/webelong.fr/public_html
-    - /bin/cp -R public /home/sites/webelong.fr/public_html
-    - /bin/cp app/page.tsx /home/sites/webelong.fr/public_html
-    - /bin/cp app/tailwind.css /home/sites/webelong.fr/public_html
+    - export DEPLOYPATH=/home/sites/webelong.fr/public_html
+    - /bin/mkdir -p $DEPLOYPATH
+    - /bin/cp -R .next/static $DEPLOYPATH
+    - /bin/cp -R app $DEPLOYPATH
+    - /bin/cp -R public $DEPLOYPATH
+    - /bin/cp -R constants $DEPLOYPATH
+    - /bin/cp -R out $DEPLOYPATH
+    - /bin/cp -R utils $DEPLOYPATH
+    - /bin/cp app/page.tsx $DEPLOYPATH
+    - /bin/cp app/tailwind.config.ts $DEPLOYPATH
+    - /bin/cp app/tsconfig.json $DEPLOYPATH
+    - /bin/cp app/postcss.config.js $DEPLOYPATH
+    - /bin/cp app/next.config.js $DEPLOYPATH
+    - /bin/cp app/next-env.d.ts $DEPLOYPATH
+
